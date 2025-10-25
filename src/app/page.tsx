@@ -7,7 +7,7 @@ import { Logo } from '@/components/logo';
 export default function Home() {
   return (
     <div className="flex min-h-screen w-full flex-col bg-background">
-      <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 py-2">
+      <header className="sticky top-0 z-50 w-full border-b border-border/30 bg-background/95 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-auto max-w-7xl items-center justify-between">
           <Logo />
           <div className="flex flex-col items-center text-center">
