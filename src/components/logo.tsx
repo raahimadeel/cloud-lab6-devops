@@ -9,7 +9,7 @@ export const Logo = ({ className }: { className?: string }) => {
                 width={48}
                 height={48}
                 alt="SCIT Logo"
-                className="rounded-full"
+                className="rounded-md"
                 data-ai-hint="logo abstract"
             />
         </div>
