@@ -75,7 +75,7 @@ export function BitsManipulator() {
     };
 
     return (
-        <Card className="w-full max-w-4xl mx-auto mt-8 shadow-lg bg-card/80 backdrop-blur-sm border-border/20">
+        <Card className="w-full max-w-4xl mx-auto mt-8 glowing-card bg-card/80 backdrop-blur-sm">
             <CardHeader>
                 <CardTitle className="font-sans text-lg font-medium text-foreground">Binary Bit Manipulation</CardTitle>
                 <CardDescription>An interactive 32-bit integer playground. Click bits or use controls to see values change.</CardDescription>
