@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex min-h-screen w-full flex-col bg-background">
       <header className="sticky top-0 z-50 w-full border-b border-border/30 bg-background/95 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-auto max-w-7xl items-center justify-between">
-          <div className="pl-[10%]">
+          <div className="pl-[5%]">
             <Logo />
           </div>
           <div className="flex flex-col items-center text-center">
