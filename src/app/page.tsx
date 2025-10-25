@@ -10,8 +10,8 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 max-w-7xl items-center justify-between">
           <Logo />
-          <h1 className="font-headline text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent sm:text-4xl">
-            SCIT Converter
+          <h1 className="font-headline text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent sm:text-3xl">
+            SCIT NUMBER CONVERSIONS
           </h1>
           <ThemeToggle />
         </div>
