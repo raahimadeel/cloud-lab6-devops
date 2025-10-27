@@ -44,8 +44,10 @@ export function MainNav() {
         <NavigationMenuList>
           <NavigationMenuItem>
             <Link href="/" legacyBehavior passHref>
-              <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === '/' ? 'bg-accent' : '')}>
-                <Terminal className="mr-2"/> Home
+              <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), pathname === '/' ? 'bg-accent' : '')}>
+                <a>
+                  <Terminal className="mr-2"/> Home
+                </a>
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
@@ -67,15 +69,19 @@ export function MainNav() {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="/guides" legacyBehavior passHref>
-              <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === '/guides' ? 'bg-accent' : '')}>
-                <BookOpen className="mr-2"/> Guides
+              <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), pathname === '/guides' ? 'bg-accent' : '')}>
+                <a>
+                  <BookOpen className="mr-2"/> Guides
+                </a>
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === '/about' ? 'bg-accent' : '')}>
-                    About
+                <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), pathname === '/about' ? 'bg-accent' : '')}>
+                    <a>
+                        About
+                    </a>
                 </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
