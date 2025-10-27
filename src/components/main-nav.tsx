@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -43,11 +44,9 @@ export function MainNav() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="/" passHref>
-              <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), pathname === '/' ? 'bg-accent' : '')}>
-                <a>
-                  <Terminal className="mr-2"/> Home
-                </a>
+            <Link href="/" legacyBehavior passHref>
+              <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === '/' ? 'bg-accent' : '')}>
+                <Terminal className="mr-2"/> Home
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
@@ -68,20 +67,16 @@ export function MainNav() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/guides" passHref>
-              <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), pathname === '/guides' ? 'bg-accent' : '')}>
-                <a>
-                  <BookOpen className="mr-2"/> Guides
-                </a>
+            <Link href="/guides" legacyBehavior passHref>
+              <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === '/guides' ? 'bg-accent' : '')}>
+                <BookOpen className="mr-2"/> Guides
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/about" passHref>
-                <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), pathname === '/about' ? 'bg-accent' : '')}>
-                    <a>
-                        <Info className="mr-2"/> About
-                    </a>
+            <Link href="/about" legacyBehavior passHref>
+                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === '/about' ? 'bg-accent' : '')}>
+                    <Info className="mr-2"/> About
                 </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
