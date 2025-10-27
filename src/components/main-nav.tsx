@@ -43,7 +43,7 @@ export function MainNav() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="/" legacyBehavior passHref>
+            <Link href="/" passHref>
               <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), pathname === '/' ? 'bg-accent' : '')}>
                 <a>
                   <Terminal className="mr-2"/> Home
@@ -68,7 +68,7 @@ export function MainNav() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/guides" legacyBehavior passHref>
+            <Link href="/guides" passHref>
               <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), pathname === '/guides' ? 'bg-accent' : '')}>
                 <a>
                   <BookOpen className="mr-2"/> Guides
@@ -77,7 +77,7 @@ export function MainNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/about" legacyBehavior passHref>
+            <Link href="/about" passHref>
                 <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), pathname === '/about' ? 'bg-accent' : '')}>
                     <a>
                         <Info className="mr-2"/> About
