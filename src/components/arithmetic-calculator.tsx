@@ -152,12 +152,14 @@ export function ArithmeticCalculator() {
                     </div>
                 )}
                 
-                {result !== null && (
-                    <div className="mt-6 text-center">
-                        <Label className="text-sm font-medium text-muted-foreground">Result</Label>
+                <div className="mt-6 text-center border border-dashed border-border rounded-lg p-4">
+                    <Label className="text-sm font-medium text-muted-foreground">Result</Label>
+                    {result !== null ? (
                         <p className="font-code text-2xl font-bold text-primary break-all">{result}</p>
-                    </div>
-                )}
+                    ) : (
+                        <p className="font-code text-lg text-muted-foreground">Result will be shown here</p>
+                    )}
+                </div>
             </CardContent>
         </Card>
     );
