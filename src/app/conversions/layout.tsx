@@ -1,12 +1,13 @@
-import { Converter } from '@/components/converter';
-import { ThemeToggle } from '@/components/theme-toggle';
 import { Github } from 'lucide-react';
-import { BitsManipulator } from '@/components/bits-manipulator';
 import { Logo } from '@/components/logo';
-import { ArithmeticCalculator } from '@/components/arithmetic-calculator';
 import { MainNav } from '@/components/main-nav';
+import { ThemeToggle } from '@/components/theme-toggle';
 
-export default function Home() {
+export default function ConversionsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div className="flex min-h-screen w-full flex-col bg-background">
       <header className="sticky top-0 z-50 w-full border-b border-border/30 bg-background/95 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -25,10 +26,8 @@ export default function Home() {
         </div>
         <MainNav />
       </header>
-      <main className="flex-grow container max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 z-10">
-        <Converter />
-        <BitsManipulator />
-        <ArithmeticCalculator />
+      <main className="flex-grow container max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8 z-10">
+        {children}
       </main>
       <footer className="w-full py-6 z-10">
         <div className="container mx-auto text-center text-sm text-muted-foreground">
