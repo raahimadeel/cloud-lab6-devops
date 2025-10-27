@@ -14,7 +14,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { BookOpen, Code, Terminal } from "lucide-react"
+import { BookOpen, Code, Info, Terminal } from "lucide-react"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -80,7 +80,7 @@ export function MainNav() {
             <Link href="/about" legacyBehavior passHref>
                 <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), pathname === '/about' ? 'bg-accent' : '')}>
                     <a>
-                        About
+                        <Info className="mr-2"/> About
                     </a>
                 </NavigationMenuLink>
             </Link>
