@@ -59,8 +59,7 @@ export default function GuidesPage() {
                     </div>
                     <div className="grid gap-8 md:grid-cols-2">
                         {guides.map((guide) => (
-                            <Link href={guide.href} key={guide.title} legacyBehavior>
-                                <a className="block group">
+                            <Link href={guide.href} key={guide.title} className="block group">
                                 <Card className="h-full transition-all duration-300 group-hover:border-primary group-hover:shadow-lg group-hover:-translate-y-1">
                                     <CardHeader>
                                         <CardTitle className="text-xl text-accent">{guide.title}</CardTitle>
@@ -74,7 +73,6 @@ export default function GuidesPage() {
                                         </div>
                                     </CardContent>
                                 </Card>
-                                </a>
                             </Link>
                         ))}
                     </div>
