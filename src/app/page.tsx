@@ -3,6 +3,7 @@ import { ThemeToggle } from '@/components/theme-toggle';
 import { Github } from 'lucide-react';
 import { BitsManipulator } from '@/components/bits-manipulator';
 import { Logo } from '@/components/logo';
+import { ArithmeticCalculator } from '@/components/arithmetic-calculator';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <main className="flex-grow container max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 z-10">
         <Converter />
         <BitsManipulator />
+        <ArithmeticCalculator />
       </main>
       <footer className="w-full py-6 z-10">
         <div className="container mx-auto text-center text-sm text-muted-foreground">
